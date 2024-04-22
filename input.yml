@@ -1,0 +1,19 @@
+# Filepath for data file:
+data_file: fab_data.xlsx
+# Categorical data columns based on data file. Leave blank if None:
+cat_cols: 
+# Numerical data columns based on data file. Leave blank if None:
+num_cols: 
+  - time
+  - base temperature
+  - middle temperature
+  - top temperature
+  - pressure
+  - pH
+  - fail
+# Target column:
+target_col: fail
+# Models to run. Choose from CategoryEmbedding, GatedAdditiveTree, FTTransformer, TabTransformer, AutoInt, and TabNetModel. Warning: GatedAdditiveTree typically has a long runtime.
+models:
+  - AutoInt
+  - CategoryEmbedding
